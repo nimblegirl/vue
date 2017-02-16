@@ -1,0 +1,87 @@
+html{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+  font-size: 16px;
+}
+
+#card{
+  background-color: #ccc;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+      border: 10px dashed #000;
+    border-bottom: none;
+    border-top: none;
+}
+
+header{
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+}
+.content{
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ccfefe;
+  font-weigth: bold;
+}
+
+input {
+  margin: 10px 0;
+  line-height: 2;
+  width: 77%;
+  min-width: 200px;
+  border: 2px solid #6baf83;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #ccc;
+  outline-color: transparent;
+  font-size: 1em;
+}
+
+input:focus, button:focus {
+  outline-style: none;
+}
+
+button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #379c5a;
+  border: 2px solid #284231;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #000;
+  transition: 0.3s ease;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  position: relative;
+  padding: 5px 15px;
+  border: 1px solid #7b7b7b;
+}
+
+li span {
+  font-size: 14px;
+  font-style: italic;
+}
+
+button.delete {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}

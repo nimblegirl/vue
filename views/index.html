@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="card">
+  <header>{{ title }}</header>
+  <div v-html="description">
+  </div>
+  <div class="content">
+    <input id="itemForm" type="text" v-on:keypress.enter="addItem"/>
+    <button v-on:click="addItem">Add a film</button>
+    <ol>
+      <li v-for="(item, index) in items">
+        <h4>{{ item.text | capitalize }}</h4>
+        <span>{{ item.genre }}</span>
+        <br />
+        <a href="">{{item.text | replace | capitalize | url}}</a>
+        <button class="delete" v-on:click="deleteItem(index)">x</button>
+      </li>
+    </ol>
+  </div>
+</div>
+<script src="../js/vue.js"></script>
+<script src="../js/application.js"></script>
+</body>
+</html>
