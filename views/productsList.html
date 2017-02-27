@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro</title>
+  <link rel="stylesheet" href="../css/productsList.css">
+</head>
+<body>
+
+  <div id="products">
+    <header>{{ title }}</header>
+    
+    <div class="card">
+      <ul>
+        <li>Name <input id='itemForm' v-on:keypress.enter='addItem'/>
+          <button v-on:click='addItem'>Add product</button><span>Amount</span></li>
+        <li v-for='item in items' id='product'>
+        
+        {{ item.name }}
+        <span><button v-on:click='item.amount += 1'>+</button> {{ item.amount }} <button v-on:click='item.amount -= 1'>-</button></span>
+        </li>
+        <li> Total species <span>{{ totalSpecies}}</span></li>
+        <li> Total amount of products <span>{{ totalProducts}}</span></li>
+    </ul>
+    </div>
+    
+  </div>
+  <script src="../js/vue.js"></script>
+  <script src="../js/productsList.js"></script>
+</body>
+</html>
